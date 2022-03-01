@@ -25,7 +25,7 @@ namespace CalculaJuros.Services.Tests
             // Arrange
             var valorInicial = 100m;
             var meses = 5;
-            var juro = 0.1m;
+            var juro = 0.01m;
             var valorFinal = 105.10m;
 
             var juroDto = new JuroDto
