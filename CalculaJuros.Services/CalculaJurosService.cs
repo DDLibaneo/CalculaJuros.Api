@@ -29,7 +29,11 @@ namespace CalculaJuros.Services
             var juroDto = JToken.Parse(responseContent)
                 .ToObject<JuroDto>();
 
-            return juroDto.Taxa;
+            var valorFinalDouble = (double)valorInicial * Math.Pow(1 + (double)juroDto.Taxa, tempoMeses);
+
+            var valorFinalString = String.Format("{0:0.00}", valorFinalDouble);
+
+            return Convert.ToDecimal(valorFinalString);            
         }
     }
 }
