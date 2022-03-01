@@ -11,11 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculaJuros.Services", "Ca
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F48477DD-397F-4362-97D3-195DD7F489A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculaJuros.Api.Integration.Tests", "CalculaJuros.Api.Integration.Tests\CalculaJuros.Api.Integration.Tests.csproj", "{B97F0FC5-AB5C-43FE-92E6-A339E6F8C6D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculaJuros.Api.Integration.Tests", "CalculaJuros.Api.Integration.Tests\CalculaJuros.Api.Integration.Tests.csproj", "{B97F0FC5-AB5C-43FE-92E6-A339E6F8C6D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculaJuros.Api.Tests", "CalculaJuros.Api.Tests\CalculaJuros.Api.Tests.csproj", "{25401829-9EE1-4605-8448-131BC39755FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculaJuros.Api.Tests", "CalculaJuros.Api.Tests\CalculaJuros.Api.Tests.csproj", "{25401829-9EE1-4605-8448-131BC39755FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculaJuros.Services.Tests", "CalculaJuros.Services.Tests\CalculaJuros.Services.Tests.csproj", "{F6F18FC1-7EB2-44DC-9AC2-E602B97BB817}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculaJuros.Services.Tests", "CalculaJuros.Services.Tests\CalculaJuros.Services.Tests.csproj", "{F6F18FC1-7EB2-44DC-9AC2-E602B97BB817}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
