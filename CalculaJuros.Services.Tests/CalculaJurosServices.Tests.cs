@@ -1,9 +1,9 @@
 using System;
 using Xunit;
 
-namespace CalculaJuros.Api.Integration.Tests
+namespace CalculaJuros.Services.Tests
 {
-    public class UnitTest1
+    public class CalculaJurosServicesTests
     {
         [Fact]
         public void Test1()

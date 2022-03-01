@@ -3,7 +3,7 @@ using Xunit;
 
 namespace CalculaJuros.Api.Tests
 {
-    public class UnitTest1
+    public class CalculaJurosControllerTests
     {
         [Fact]
         public void Test1()
