@@ -19,7 +19,9 @@
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "JUROS_API_ENDPOINT": "https://localhost:44300/",
+        "JUROS_API_ENDPOINT_GETLASTJURO_PATH": "api/juros/taxa"
       },
       "applicationUrl": "https://localhost:5001;http://localhost:5000"
     },

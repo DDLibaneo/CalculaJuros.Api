@@ -42,7 +42,7 @@ namespace CalculaJuros.Api
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers());
+                endpoints.MapControllers();
             });
         }
     }

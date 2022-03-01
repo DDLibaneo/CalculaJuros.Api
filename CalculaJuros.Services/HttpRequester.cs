@@ -13,6 +13,8 @@ namespace CalculaJuros.Services
 
     public class HttpRequester : IHttpRequester
     {
+
+
         public Task<HttpResponseMessage> GetAsync()
         {
             throw new NotImplementedException();
