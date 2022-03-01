@@ -5,10 +5,14 @@ namespace CalculaJuros.Services.Tests
 {
     public class CalculaJurosServicesTests
     {
-        [Fact]
-        public void Test1()
+        [Fact(DisplayName = "CalcularJuros  - [Success]")]
+        public void CalcularJuros_Success()
         {
+            // Arrange
 
+            // Act
+
+            // Assert
         }
     }
 }
