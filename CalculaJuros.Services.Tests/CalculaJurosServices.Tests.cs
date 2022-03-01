@@ -26,6 +26,7 @@ namespace CalculaJuros.Services.Tests
             var valorInicial = 100m;
             var meses = 5;
             var juro = 0.1m;
+            var valorFinal = 105.10m;
 
             var juroDto = new JuroDto
             {
@@ -47,7 +48,11 @@ namespace CalculaJuros.Services.Tests
             var result = await _calculaJurosService.CalculaJuro(valorInicial, meses);
 
             // Assert
+            Assert.IsType<decimal>(result);
+            Assert.Equal(valorFinal, result);
 
+            var failMessage = "GetLastJuroAsync should be called once.";
+            _httpRequester.Verify(h => h.GetLastJuroAsync(), Times.Once, failMessage);
         }
     }
 }
