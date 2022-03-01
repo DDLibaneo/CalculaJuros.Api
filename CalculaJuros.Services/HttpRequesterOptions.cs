@@ -4,16 +4,16 @@ using System.Text;
 
 namespace CalculaJuros.Services
 {
-    public interface IRequesterOptions
+    public interface IHttpRequesterOptions
     {
         string UriJurosApi { get; }
         string PathGetLastJuro { get; }
     }
 
-    public class HttpRequesterOptions
+    public class HttpRequesterOptions : IHttpRequesterOptions
     {
         private readonly string _uriJurosApi;
-        private readonly string _pathLastJuro;
+        private readonly string _pathGetLastJuro;
 
         private readonly string JUROS_API_ENDPOINT = "JUROS_API_ENDPOINT";
         private readonly string JUROS_API_ENDPOINT_GETLASTJURO_PATH = "JUROS_API_ENDPOINT_GETLASTJURO_PATH";
@@ -35,11 +35,11 @@ namespace CalculaJuros.Services
             }
         }
 
-        public string PathLastJuro
+        public string PathGetLastJuro
         {
             get
             {
-                return _pathLastJuro
+                return _pathGetLastJuro
                     ?? throw new Exception(VARIABLE_NOTFOUND_MESSAGE);
             }
         }

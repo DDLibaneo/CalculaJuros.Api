@@ -19,16 +19,22 @@ namespace CalculaJuros.Api
 
             ConfigureApplicationServices(services);
             ConfigureHttpRequester(services);
+            ConfigureHttpRequesterOptions(services);
         }
 
-        private void ConfigureApplicationServices(IServiceCollection services)
+        protected virtual void ConfigureApplicationServices(IServiceCollection services)
         {
             services.AddScoped<ICalculaJurosService, CalculaJurosService>();
         }
 
-        private void ConfigureHttpRequester(IServiceCollection services)
+        protected virtual void ConfigureHttpRequester(IServiceCollection services)
         {
             services.AddHttpClient<IHttpRequester, HttpRequester>();
+        }
+
+        private void ConfigureHttpRequesterOptions(IServiceCollection services)
+        {
+            services.AddSingleton<IHttpRequesterOptions, HttpRequesterOptions>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
