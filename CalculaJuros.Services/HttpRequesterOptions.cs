@@ -30,7 +30,7 @@ namespace CalculaJuros.Services
         {
             get 
             { 
-                return _uriJurosApi 
+                return _uriJurosApi
                     ?? throw new Exception(VARIABLE_NOTFOUND_MESSAGE);
             }
         }
