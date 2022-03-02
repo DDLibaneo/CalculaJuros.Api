@@ -12,7 +12,9 @@
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "JUROS_API_ENDPOINT": "https://localhost:44300",
+        "JUROS_API_ENDPOINT_GETLASTJURO_PATH": "api/juros/taxa"
       }
     },
     "CalculaJuros.Api": {

@@ -23,7 +23,7 @@ namespace CalculaJuros.Services
         public HttpRequesterOptions()
         {
             _uriJurosApi = Environment.GetEnvironmentVariable(JUROS_API_ENDPOINT);
-            _uriJurosApi = Environment.GetEnvironmentVariable(JUROS_API_ENDPOINT_GETLASTJURO_PATH);
+            _pathGetLastJuro = Environment.GetEnvironmentVariable(JUROS_API_ENDPOINT_GETLASTJURO_PATH);
         }
 
         public string UriJurosApi

@@ -1,6 +1,7 @@
 ﻿using CalculaJuros.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System.Reflection;
 
 namespace CalculaJuros.Api.Integration.Tests.Environment
 {
@@ -11,6 +12,14 @@ namespace CalculaJuros.Api.Integration.Tests.Environment
         { }
 
         protected override void ConfigureApplicationServices(IServiceCollection services)
+        {
+            var controllersAssemblyType = typeof(Startup).GetTypeInfo().Assembly;
+            services.AddMvc().AddApplicationPart(controllersAssemblyType);
+
+            services.AddScoped<ICalculaJurosService, CalculaJurosService>();            
+        }
+
+        protected override void ConfigureHttpRequester(IServiceCollection services)
         {
             services.AddSingleton<IHttpRequester, FakeHttpRequester>();
         }

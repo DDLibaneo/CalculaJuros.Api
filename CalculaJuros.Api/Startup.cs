@@ -52,6 +52,8 @@ namespace CalculaJuros.Api
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseHttpsRedirection();
+
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>

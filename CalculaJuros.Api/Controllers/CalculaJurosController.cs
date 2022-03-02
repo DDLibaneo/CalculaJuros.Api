@@ -4,9 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
 namespace CalculaJuros.Api.Controllers
-{
-    [Route("api")]
+{    
     [ApiController]
+    [Route("api")]
     public class CalculaJurosController : ControllerBase
     {
         private readonly ICalculaJurosService _calculaJurosService;
