@@ -14,11 +14,12 @@ namespace CalculaJuros.Api.Integration.Tests
         }
 
         [Fact(DisplayName = "CalcularJuros - [Success] - Juros são calculados e retornados corretamente.")]
-        public void CalcularJuros_Success()
+        public async void CalcularJuros_Success()
         {
             // Arrange
-            
+
             // Act
+            var (responseObject, statusCode) = await _apiFixture.GetInApiAsync<decimal>("calculaJuros");
 
             // Assert
         }

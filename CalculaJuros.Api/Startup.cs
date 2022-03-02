@@ -40,7 +40,7 @@ namespace CalculaJuros.Api
             services.AddHttpClient<IHttpRequester, HttpRequester>();
         }
 
-        private void ConfigureHttpRequesterOptions(IServiceCollection services)
+        protected virtual void ConfigureHttpRequesterOptions(IServiceCollection services)
         {
             services.AddSingleton<IHttpRequesterOptions, HttpRequesterOptions>();
         }
